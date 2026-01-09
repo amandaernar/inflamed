@@ -22517,8 +22517,10 @@ Protein_chain_A     3
 
 [ system ]
 ; Name
-INTERLEUKIN-1 BETA
+INTERLEUKIN-1 BETA in water
 
 [ molecules ]
 ; Compound        #mols
 Protein_chain_A     1
+SOL         61313
+NA               3
