@@ -1,0 +1,11 @@
+libdir=/home/aether/inflame/gromacs_install/lib
+
+Name: libgromacs
+Description: Gromacs library
+URL: http://www.gromacs.org
+Version: 2024.4
+Requires:  
+Libs.private:   
+Libs: -L${libdir} -lgromacs  -lm
+Cflags:  -I/home/aether/inflame/gromacs_install/include -DGMX_DOUBLE=0 -fopenmp
+

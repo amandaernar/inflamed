@@ -1,0 +1,14 @@
+PROJECT_NAME           = "GROMACS external C++ API development"
+@INCLUDE                = Doxyfile-gmxapi0
+OUTPUT_DIRECTORY       = /home/aether/project/inflame/gromacs_source/gromacs-2024.4/build/docs/api-dev
+EXTRACT_PRIVATE        = YES
+EXTRACT_STATIC         = YES
+EXTRACT_ANON_NSPACES   = YES
+INTERNAL_DOCS          = YES
+CASE_SENSE_NAMES       = YES
+STRIP_FROM_INC_PATH    = /home/aether/project/inflame/gromacs_source/gromacs-2024.4/api/gmxapi/include /home/aether/project/inflame/gromacs_source/gromacs-2024.4/build/api/gmxapi/include /home/aether/project/inflame/gromacs_source/gromacs-2024.4/api/gmxapi /home/aether/project/inflame/gromacs_source/gromacs-2024.4/build/api/gmxapi
+INPUT                  = /home/aether/project/inflame/gromacs_source/gromacs-2024.4/api/gmxapi/include /home/aether/project/inflame/gromacs_source/gromacs-2024.4/build/api/gmxapi/include  /home/aether/project/inflame/gromacs_source/gromacs-2024.4/api/gmxapi /home/aether/project/inflame/gromacs_source/gromacs-2024.4/api/gmxapi/cpp/tests
+RECURSIVE              = YES
+SOURCE_BROWSER         = YES
+REFERENCED_BY_RELATION = YES
+REFERENCES_RELATION    = YES

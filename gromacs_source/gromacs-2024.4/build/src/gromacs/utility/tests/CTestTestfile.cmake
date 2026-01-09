@@ -1,0 +1,10 @@
+# CMake generated Testfile for 
+# Source directory: /home/aether/project/inflame/gromacs_source/gromacs-2024.4/src/gromacs/utility/tests
+# Build directory: /home/aether/project/inflame/gromacs_source/gromacs-2024.4/build/src/gromacs/utility/tests
+# 
+# This file includes the relevant testing commands required for 
+# testing this directory and lists subdirectories to be tested as well.
+add_test(UtilityUnitTests "/home/aether/project/inflame/gromacs_source/gromacs-2024.4/build/bin/utility-test" "--gtest_output=xml:/home/aether/project/inflame/gromacs_source/gromacs-2024.4/build/Testing/Temporary/UtilityUnitTests.xml")
+set_tests_properties(UtilityUnitTests PROPERTIES  LABELS "GTest;UnitTest" PROCESSORS "1" TIMEOUT "30" _BACKTRACE_TRIPLES "/home/aether/project/inflame/gromacs_source/gromacs-2024.4/src/testutils/TestMacros.cmake;332;add_test;/home/aether/project/inflame/gromacs_source/gromacs-2024.4/src/testutils/TestMacros.cmake;350;gmx_register_gtest_test;/home/aether/project/inflame/gromacs_source/gromacs-2024.4/src/gromacs/utility/tests/CMakeLists.txt;34;gmx_add_unit_test;/home/aether/project/inflame/gromacs_source/gromacs-2024.4/src/gromacs/utility/tests/CMakeLists.txt;0;")
+add_test(UtilityMpiUnitTests "/home/aether/project/inflame/gromacs_source/gromacs-2024.4/build/bin/utility-mpi-test" "-ntmpi" "2" "--gtest_output=xml:/home/aether/project/inflame/gromacs_source/gromacs-2024.4/build/Testing/Temporary/UtilityMpiUnitTests.xml")
+set_tests_properties(UtilityMpiUnitTests PROPERTIES  LABELS "GTest;UnitTest;MpiTest" PROCESSORS "2" TIMEOUT "30" _BACKTRACE_TRIPLES "/home/aether/project/inflame/gromacs_source/gromacs-2024.4/src/testutils/TestMacros.cmake;332;add_test;/home/aether/project/inflame/gromacs_source/gromacs-2024.4/src/testutils/TestMacros.cmake;362;gmx_register_gtest_test;/home/aether/project/inflame/gromacs_source/gromacs-2024.4/src/gromacs/utility/tests/CMakeLists.txt;65;gmx_add_mpi_unit_test;/home/aether/project/inflame/gromacs_source/gromacs-2024.4/src/gromacs/utility/tests/CMakeLists.txt;0;")
