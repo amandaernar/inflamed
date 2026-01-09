@@ -1,1 +1,0 @@
-/usr/bin/c++ -O3 -DNDEBUG -Wl,--dependency-file=CMakeFiles/test_selection.dir/link.d CMakeFiles/test_selection.dir/test_selection.cpp.o -o ../../../../bin/test_selection  -Wl,-rpath,"\$ORIGIN/../lib" ../../../../lib/libgromacs.so.9.0.0 -lm /usr/lib/libgomp.so /usr/lib/libpthread.a -Wl,-rpath-link,/home/aether/project/inflame/gromacs_source/gromacs-2024.4/build/lib
