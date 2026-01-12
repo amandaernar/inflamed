@@ -2,7 +2,7 @@
 ;	File 'mdout.mdp' was generated
 ;	By user: aether (1000)
 ;	On host: riptide
-;	At date: Thu Jan  8 21:36:00 2026
+;	At date: Sun Jan 11 23:24:18 2026
 ;
 ;	Created by:
 ;	                     :-) GROMACS - gmx grompp, 2024.4 (-:
@@ -11,7 +11,7 @@
 ;	Data prefix:  /home/aether/inflame/gromacs_install
 ;	Working dir:  /home/aether/project/inflame/interleukin1b
 ;	Command line:
-;	  gmx grompp -f minim.mdp -c 1i1b_solv_ions.gro -p topol.top -o em.tpr -maxwarn 1
+;	  gmx grompp -f minim.mdp -c 1i1b_solv_ions.gro -p topol.top -o em.tpr
 
 ; VARIOUS PREPROCESSING OPTIONS
 ; Preprocessor information: use cpp syntax.
@@ -175,7 +175,7 @@ annealing-temp           =
 ; GENERATE VELOCITIES FOR STARTUP RUN
 gen-vel                  = no
 gen-temp                 = 300
-gen-seed                 = -44317102
+gen-seed                 = -33562945
 
 ; OPTIONS FOR BONDS    
 constraints              = none
