@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang='en'>
+  <head>
+    <title>Interleukin 1&beta;</title>
+    <link rel='stylesheet' href='style.css'>
+    <link rel='icon' type='image/jpg' href='src/favicon.jpg'>
+
+    <link rel='preconnect' href='https://fonts.googleapis.com'>
+    <link rel='preconnect' href='https://fonts.gstatic.com' crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Xanh+Mono:ital@0;1&display=swap" rel="stylesheet">
+
+  </head>
+
+  <body>
+    <main>
+      <section id='hero'>
+        <video autoplay loop muted>
+          <source src="src/il1b-hero.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+      </section>
+
+      <section id='intro'>
+        <header>
+          <h1>Interleukin 1&beta;</h1>
+        </header>
+      </section>
+
+      <section id='content'>
+        <article class='overview'>
+          <h2>Overview</h2>
+          <p>The objective was to create a molecular dynamics (MD) simulation of Interleukin-1&beta;, a protein largely involved in human inflammation. The protein was observed in a virtual environment meant to mimic human body conditions. Its structural stability was observed over 100 nanoseconds.</p>
+        </article>
+
+        <article class='methodology'>
+          <h2>Methodology</h2>
+          <p>The simulation was built using the GROMACS 2024 engine and the CHARMM36m force field. I placed the protein in a solvated box (a cube-shaped box filled with water molecules) and added salt ions to closely match the physiological concentration. After mimimizing the system's energy to prevent "explosions" or atomic crashes, I equilibriated its temperature to ~300K and the pressure to 1 bar.</p>
+          <p>The system then underwent a 100-nanosecond "production run," and the final system was centered to create a clean visualization of the protein. I then visualized it in <strong>VMD</strong> and colorcoded the structure as shown below.</p>
+        </article>
+
+        <article class='results'>
+          <h2>Results</h2>
+            <div class="gallery-container">
+                <div class="gallery-item">
+                    <img src="src/cartoon.gif" alt="Cartoon Animation">
+                </div>
+
+                <div class="gallery-item">
+                    <img src="src/cpk.gif" alt="CPK Animation">
+                </div>
+
+                <div class="gallery-item">
+                    <img src="src/cpk-resname.gif" alt="CPK Resname Animation">
+                </div>
+              </div>
+        </article>
+
+        <article class='discussion'>
+          <h2>Discussion</h2>
+          <p>The simulation confirmed taht IL-1&beta; is indeed stable, as we can observie its distinct &beta;-trefoil fold. Quantitative analysis via Root mean Square Deviation (RMSD) showed that the protein reached equilibrium within the first 20 nanoseconds, as it hovered around 0.15 nm for the rest of the run.</p>
+          <p>The VMD visualizations show that the 12 &beta; strands remained intact. The protein's movement was limited only to surface loops, and the simulation was thus successful.</p>
+        </article>
+
+        <article class='command'>
+          <h2>Command History</h2>
+          <p></p>
+        </article>
+      </section>
+    </main>
+
+  </body>
+</html>
